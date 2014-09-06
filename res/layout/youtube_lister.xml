@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="vertical"
+  android:layout_height="fill_parent">
+
+<RelativeLayout
+		android:background="#444444"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+<ImageButton 
+		android:id="@+id/btn_prev"
+		android:scaleType="centerCrop"
+		android:src="@drawable/left_arrow_selector"
+		android:layout_alignParentLeft="true"
+		android:layout_width="50dp"
+		android:layout_height="50dp"/>
+<TextView
+		android:layout_toRightOf="@id/btn_prev"
+		android:layout_toLeftOf="@+id/btn_next"
+		android:id="@+id/listTitle"
+		android:textSize="16dp"
+    	android:textStyle="bold"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:paddingTop="5dp"
+    	android:gravity="center_horizontal"/>
+ <TextView	
+		android:layout_toRightOf="@id/btn_prev"
+		android:layout_toLeftOf="@+id/btn_next"
+		android:layout_below="@id/listTitle"
+		android:id="@+id/txtResult"
+		android:textSize="12dp"
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+<ImageButton 
+		android:id="@id/btn_next"
+		android:scaleType="centerCrop"
+		android:src="@drawable/right_arrow_selector"
+		android:layout_alignParentRight="true"
+		android:layout_width="50dp"
+		android:layout_height="50dp"/>	
+</RelativeLayout>
+
+<TextView
+ 	android:text=""
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="4dp"/>
+<ListView
+	android:id="@+id/listMyVid"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

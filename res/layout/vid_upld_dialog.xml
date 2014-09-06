@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:padding="3dp"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal">
+	<RelativeLayout
+		android:id="@+id/youtube"
+		android:layout_below="@id/blank"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@layout/border"
+		android:padding="4dp">
+	<ImageView 
+		android:src="@drawable/you" 
+		android:id="@+id/imgyou"
+		android:layout_marginTop="10dip"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" />
+	<CheckBox 
+		android:id="@+id/cbVidYou"
+		android:layout_alignTop="@id/imgyou"
+		android:layout_alignParentRight="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:gravity="center" />
+	</RelativeLayout>
+	<TableLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:stretchColumns="0,1"
+		android:layout_below="@id/youtube" 
+		android:layout_height="wrap_content">
+		<TableRow>
+			<Button android:id="@+id/btnOk" android:text="OK" />
+			<Button android:id="@+id/btnCancel" android:text="Cancel" />
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

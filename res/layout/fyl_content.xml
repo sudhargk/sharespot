@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="horizontal"
+  android:gravity="center_vertical"
+  android:padding="4dp">
+ <ImageView
+	android:id="@+id/fylthmb"  
+	android:scaleType="centerCrop"
+	android:cropToPadding="true"
+    android:layout_width="80dp" 
+    android:layout_height="60dp"
+    android:background="@layout/lightborder"/>
+ <LinearLayout
+ 	android:layout_toRightOf="@id/fylthmb"
+ 	android:layout_width="150dp"
+ 	android:layout_marginLeft="5dp"
+  	android:layout_height="wrap_content"
+  	android:orientation="vertical"> 
+ 	<TextView
+  		android:id="@+id/fylName"  
+  		android:typeface="monospace"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:singleLine="true"
+    	android:padding="2dp"/>
+    <TextView
+  		android:id="@+id/fylSize"  
+	  	android:typeface="monospace"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:singleLine="true"
+    	android:padding="2dp"/>
+  </LinearLayout>
+  <CheckBox
+  		android:focusable="false"
+  		android:clickable="false"
+  		android:focusableInTouchMode="false"
+  		android:id="@+id/fylCB"  
+  		android:layout_alignParentRight="true"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"/>
+</RelativeLayout>

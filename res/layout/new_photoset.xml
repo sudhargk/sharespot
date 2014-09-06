@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal" 
+	android:padding="5dp"
+	android:stretchColumns="*">
+	<TableRow>
+		<TextView 
+			android:layout_span="2" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="PhotoSet Name :" />
+	</TableRow>
+	<TableRow>
+		<EditText 
+			android:layout_span="2" 
+			android:id="@+id/Edname"
+			android:singleLine="true" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	<TableRow>
+		<TextView 
+			android:layout_span="2" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Description" />
+	</TableRow>
+	<TableRow>
+		<EditText 
+			android:layout_span="2" 
+			android:minLines="3"
+			android:maxLines="3"
+			android:id="@+id/Eddesc" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	<TableRow>
+		<Button 
+			android:id="@+id/btnOK" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="OK" />
+		<Button 
+			android:id="@+id/btnCancel" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="Cancel" />
+	</TableRow>
+</TableLayout>

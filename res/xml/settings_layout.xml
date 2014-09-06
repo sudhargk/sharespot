@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ <PreferenceCategory 
+ 	android:title="Configure Accounts">
+	<PreferenceScreen
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:key="configPicasa"
+  		android:title="Configure Picasa"
+  		android:summary="Account Not Configured">
+  		 <EditTextPreference
+                android:summary="Not Mentioned"
+                android:title="Picasa Username"
+                android:key="picUserName"
+                android:dialogTitle="PICASA USERNAME"/>
+        <EditTextPreference
+                android:title="Picasa Password"
+                android:key="picPass"
+                android:dialogTitle="PICASA PASSWORD"/>
+      </PreferenceScreen>
+      <PreferenceScreen
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:key="configYoutube"
+  		android:title="Configure Youtube"
+  		android:summary="Account Not Configured">
+  		 <EditTextPreference
+                android:summary="Not Mentioned"
+                android:title=" Username"
+                android:key="youUserName"
+                android:dialogTitle="YOUTUBE USERNAME"/>
+        <EditTextPreference
+                android:summary="Not Mentioned"
+                android:title="Youtube Password"
+                android:key="youPass"
+                android:dialogTitle="YOUTUBE PASSWORD"/>
+      </PreferenceScreen>
+</PreferenceCategory>
+ <PreferenceCategory 
+ 	android:title="Other Settings">
+ 	  <CheckBoxPreference
+                android:key="appPassword"
+                android:title="Set Password"
+                android:defaultValue="false"
+                android:summary="Turn on/Off the Application Password" />
+ </PreferenceCategory>
+</PreferenceScreen>

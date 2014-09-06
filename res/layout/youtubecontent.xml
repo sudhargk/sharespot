@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+<ImageView 
+	android:id="@+id/thmb1"
+	android:scaleType="centerCrop"
+	android:layout_width="85dip" 
+	android:layout_height="60dip" />
+<LinearLayout
+	android:orientation="vertical"
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+<TextView
+	android:text="title1" 
+	android:textSize="12dp"
+	android:textStyle="bold"
+	android:textColor="#444444"
+	android:singleLine="true"
+	android:id="@+id/title1" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+<LinearLayout
+	android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content">
+<TextView
+	android:text="length1" 
+	android:textSize="10dp"
+	android:textColor="#888888"
+	android:id="@+id/length1"
+	android:gravity="right"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" />
+<TextView
+	android:text="viewed" 
+	android:textSize="10dp"
+	android:id="@+id/viewed"
+	android:textColor="#888888"
+	android:gravity="right"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" />
+</LinearLayout>
+<RatingBar
+	android:id="@+id/rate"
+	android:layout_height = "wrap_content"
+	android:layout_width = "wrap_content"
+	android:isIndicator = "true"
+	android:maxHeight = "14dp"
+	android:numStars="5"
+	android:stepSize="0.5"
+	style="?android:attr/ratingBarStyleSmall" />
+</LinearLayout>
+</LinearLayout>

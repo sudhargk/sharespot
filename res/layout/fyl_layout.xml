@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  <RelativeLayout
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="5dp"
+	android:paddingRight="5dp"
+	android:paddingTop="5dp">
+  <Button
+  	android:id="@+id/quickUp"
+  	android:textColor="#022222"
+  	android:text="Quick Upload"
+  	android:visibility="gone"
+  	android:typeface="sans"
+  	android:drawableRight="@drawable/upld"
+  	android:layout_width="100dp"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentLeft="true"/>
+  <Button
+  	android:id="@+id/addToQ"
+  	android:textColor="#022222"
+  	android:text="Add to Queue"
+  	android:typeface="sans"
+  	android:drawableLeft="@drawable/addtoq"
+  	android:layout_width="100dp"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentRight="true"/>
+  	</RelativeLayout>
+ <TextView
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="1dp"
+    android:background="#444444"/>
+  <ListView
+  	android:id="@+id/fylList"
+  	android:focusable="true"
+  	android:clickable="true"
+  	android:focusableInTouchMode="true"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"/>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:orientation="vertical"
+  	android:focusable="true"
+ 	android:focusableInTouchMode="true">
+ 	
+<LinearLayout
+	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:focusable="true"
+  	android:gravity="center"
+  	android:layout_marginTop="4dp"
+ 	android:focusableInTouchMode="true">
+<EditText
+ 		android:id="@+id/searchKey"
+ 		android:layout_width="220dp"
+ 		android:singleLine="true"
+ 		android:layout_height="wrap_content"/>
+<Button
+	 	android:id="@+id/searchButton"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:text="SEARCH"/>
+</LinearLayout>
+<TextView
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="4dp"/>
+ 		
+<RelativeLayout
+		android:visibility="gone"
+		android:id="@+id/you_srch_result"
+		android:background="#444444"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+<ImageButton 
+		android:id="@+id/btn_prev"
+		android:src="@drawable/left_arrow_selector"
+		android:layout_alignParentLeft="true"
+		android:scaleType="centerCrop"
+		android:layout_width="50dp"
+		android:layout_height="50dp"/>
+<LinearLayout
+		android:layout_toRightOf="@id/btn_prev"
+		android:layout_toLeftOf="@+id/btn_next"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+<TextView
+		android:paddingTop="5dp"
+		android:id="@+id/txtQuery"
+		android:singleLine="true"
+		android:textSize="14dp"
+		android:textStyle="bold"
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+<TextView
+		android:paddingTop="5dp"
+		android:id="@+id/txtResult"
+		android:textSize="12dp"
+		android:gravity="center_horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>
+<ImageButton 
+			android:id="@id/btn_next"
+			android:src="@drawable/right_arrow_selector"
+			android:layout_alignParentRight="true"
+			android:scaleType="centerCrop"
+			android:layout_width="50dp"
+			android:layout_height="50dp"/>	
+</RelativeLayout>
+<ListView
+	 	android:id="@+id/searchList"
+	 	android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content" />
+</LinearLayout>

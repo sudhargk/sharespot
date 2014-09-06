@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:gravity="center_horizontal"
+  	android:padding="5dp"
+  	android:stretchColumns="*">
+<TableRow>
+<TextView
+	android:layout_span="2"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="Email"
+  	android:id="@+id/tvUpper" />
+</TableRow>
+<TableRow>
+<EditText
+	android:layout_span="2"
+	android:id="@+id/edtemail"
+	android:singleLine="true"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="Enter Email" />
+</TableRow>
+<TableRow>
+<TextView
+	android:layout_span="2"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="Password"
+  	android:id="@+id/tvDown" />
+</TableRow>
+<TableRow>
+<EditText
+	android:layout_span="2"
+	android:singleLine="true"
+	android:id="@+id/edtpassword"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:password="true"
+  	android:text="Enter Password" />
+</TableRow>
+<TableRow>
+<Button 
+	android:id="@+id/btnOK"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="OK" />
+<Button 
+	android:id="@+id/btnCancel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="Cancel" />
+</TableRow>
+</TableLayout>
