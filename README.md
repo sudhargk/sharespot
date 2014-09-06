@@ -16,7 +16,7 @@ Sharespot
 
 
 ###APK releases
-All the releases of this project is available in `\release` folder
+All the releases of this project is available in `\release` folder 
 
 ###Screenshots
 - - -
