@@ -20,7 +20,7 @@ All the releases of this project is available in `\release` folder
 
 ###Screenshots
 - - -
-![Alt text](http://i.imgur.com/2FA86XT.png"Main Screen")
+![Alt text](http://i.imgur.com/2FA86XT.png, "Main Screen")
 - - -
 few more screenshots can be found in this [link]
 
